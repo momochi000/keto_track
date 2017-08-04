@@ -27,15 +27,15 @@ services:
 #    volumes: 
 #      - /node_modules
 
-#  webpack-dev:
-#    image: keto_trac_web
-#    build:
-#      context: .
-#    environment:
-#      - NODE_ENV=development
-#    ports:
-#      - "8080:8080"
-#    volumes:
-#      - .:/myapp/
-#    #command: ./bin/webpack-dev-server --host 0.0.0.0 --inline true --hot true
-#    command: ./bin/webpack-dev-server --inline true --hot true
+  webpack-dev:
+    image: keto_trac_web
+    build:
+      context: .
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/myapp/
+    #command: ./bin/webpack-dev-server --host 0.0.0.0 --inline true --hot true
+    command: ./bin/webpack-dev-server --inline true --hot true

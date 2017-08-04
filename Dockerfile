@@ -22,16 +22,16 @@ RUN rm -rf /var/lib/apt/lists/*
 #  echo '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 
 # Maybe we can just download the binary
-#RUN \
-#  cd /tmp && \
-#  wget http://nodejs.org/dist/v6.11.2/node-v6.11.2-linux-x64.tar.gz && \
-#  tar xzf node-v6.11.2-linux-x64.tar.gz && \
-#  rm -f node-v6.11.2-linux-x64.tar.gz && \
-#  cd node-v* && \
-#  cp bin/node /usr/bin && \
-#  ./bin/npm install -g npm && \
-#  cd /tmp && \
-#  rm -rf /tmp/node-v*
+RUN \
+  cd /tmp && \
+  wget http://nodejs.org/dist/v6.11.2/node-v6.11.2-linux-x64.tar.gz && \
+  tar xzf node-v6.11.2-linux-x64.tar.gz && \
+  rm -f node-v6.11.2-linux-x64.tar.gz && \
+  cd node-v* && \
+  cp bin/node /usr/bin && \
+  ./bin/npm install -g npm && \
+  cd /tmp && \
+  rm -rf /tmp/node-v*
 
 ENV APP_HOME /myapp
 RUN mkdir $APP_HOME
@@ -49,16 +49,16 @@ RUN bundle install
 
 #RUN npm config set registry http://registry.npmjs.org/ && npm install
 
-#RUN apt-get update -qq && apt-get install -y apt-transport-https
-#RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-#RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-#RUN apt-get update -qq && apt-get install -y yarn
+RUN apt-get update -qq && apt-get install -y apt-transport-https
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN apt-get update -qq && apt-get install -y yarn
 
 #ENV YARN_MODULES=$APP_HOME/node_modules \
 #  YARN_JOBS=2 \
 #  YARN_PATH=/node_modules
 
-#RUN ./bin/yarn install
+RUN ./bin/yarn install
 
 
 # This part is needed in production for heroku. Unfortunately, it's getting 

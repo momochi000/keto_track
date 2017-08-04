@@ -34,5 +34,5 @@
 .byebug_history
 
 # Ignore node modules
-/node_modules
 /public/packs
+/node_modules
