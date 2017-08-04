@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.2'
 
 gem 'cancan'
 gem 'devise'
-gem 'devise-token_authenticatable'
+#gem 'devise-token_authenticatable'
 gem 'haml-rails'
 gem 'pg'
 # Use Puma as the app server
