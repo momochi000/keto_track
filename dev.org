@@ -1,14 +1,24 @@
 * Purpose of this document
   To track tasks in development this app
 * Current
-** TODO Get hello world page to display
-   With typescript on react stuff
+** TODO User can log in
+*** TODO Install/setup devise
+*** TODO Create users table with requisite fields
+*** TODO Add sign up/sign in link to home page
 * Backlog
-User can log in
-Add initial user to seed
-
+** TODO Add initial user to seed
+** TODO User redirected to their own dashboard
+** TODO user has many meals
+** TODO meal has fields for carbs fat and protein
+** TODO dashboard shows index of meals for the day
+** TODO seed up a single meal for today for dev user
 * Icebox
+** TODO Push to github
+** TODO Add bootstrap and rework markup
 * Done
+** DONE Get hello world page to display
+   CLOSED: [2017-08-04 Fri 16:13]
+   With typescript on react stuff
 ** DONE configure typescript on react
    CLOSED: [2017-08-04 Fri 16:03]
 ** DONE Setup docker image(s)
