@@ -1,12 +1,16 @@
 * Purpose of this document
   To track tasks in development this app
 * Current
-** TODO configure typescript on react
 ** TODO Get hello world page to display
    With typescript on react stuff
 * Backlog
+User can log in
+Add initial user to seed
+
 * Icebox
 * Done
+** DONE configure typescript on react
+   CLOSED: [2017-08-04 Fri 16:03]
 ** DONE Setup docker image(s)
    CLOSED: [2017-08-04 Fri 15:33]
 ** DONE rails new
