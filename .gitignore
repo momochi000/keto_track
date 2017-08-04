@@ -9,6 +9,7 @@
 # Ignore vim swap files
 *.swp
 *.swo
+.#dev.org
 
 # Ignore bundler config.
 /.bundle
