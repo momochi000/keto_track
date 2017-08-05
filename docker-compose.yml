@@ -14,6 +14,9 @@ services:
       - db
       - webpack-dev
     command: ./bin/rails s -p 3000 -b '0.0.0.0' 
+    # For when I need to debug with binding.pry or something
+    tty: true
+    stdin_open: true
 
   bundle:
     image: ketotrac_web
