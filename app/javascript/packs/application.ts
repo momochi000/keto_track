@@ -7,6 +7,10 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
+require("expose-loader?$!expose-loader?jQuery!jquery"); // adds $ to window so we can jquery in global scope
+//require("rails-ujs"); // didn't seem to work
+require("jquery-ujs");
+
 console.log('Hello World from Webpacker')
 
 // BEGIN TYPESCRIPT CHECK

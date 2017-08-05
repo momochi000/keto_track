@@ -1,12 +1,9 @@
 * Purpose of this document
   To track tasks in development this app
 * Current
-** TODO User can log in
-*** TODO Install/setup devise
-*** TODO Create users table with requisite fields
-*** TODO Add sign up/sign in link to home page
-* Backlog
 ** TODO Add initial user to seed
+* Backlog
+** TODO User can sign out
 ** TODO User redirected to their own dashboard
 ** TODO user has many meals
 ** TODO meal has fields for carbs fat and protein
@@ -15,7 +12,17 @@
 * Icebox
 ** TODO Push to github
 ** TODO Add bootstrap and rework markup
+** TODO Change to Unicorn server
+   Puma seems slow on dev
 * Done
+** DONE User can log in
+   CLOSED: [2017-08-04 Fri 16:36]
+*** DONE Install/setup devise
+    CLOSED: [2017-08-04 Fri 16:25]
+*** DONE Create users table with requisite fields
+    CLOSED: [2017-08-04 Fri 16:25]
+*** DONE Add sign up/sign in link to home page
+    CLOSED: [2017-08-04 Fri 16:36]
 ** DONE Get hello world page to display
    CLOSED: [2017-08-04 Fri 16:13]
    With typescript on react stuff
