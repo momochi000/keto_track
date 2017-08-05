@@ -1,1 +1,7 @@
 %h1 User dashboard
+
+%ol
+- @meals.each do |meal|
+  %li 
+    Meal name -->
+    = meal.name

@@ -1,15 +1,16 @@
 * Purpose of this document
   To track tasks in development this app
 * Current
+** TODO Push to github
 * Backlog
-** TODO dashboard shows index of meals for the day
 ** TODO seed up a single meal for today for dev user
 * Icebox
-** TODO Push to github
 ** TODO Add bootstrap and rework markup
 ** TODO Change to Unicorn server
    Puma seems slow on dev
 * Done
+** DONE dashboard shows index of meals for the day
+   CLOSED: [2017-08-04 Fri 18:58]
 ** DONE meal has fields for carbs fat and protein
    CLOSED: [2017-08-04 Fri 18:52]
 ** DONE user has many meals
