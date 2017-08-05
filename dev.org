@@ -2,7 +2,6 @@
   To track tasks in development this app
 * Current
 * Backlog
-** TODO meal has fields for carbs fat and protein
 ** TODO dashboard shows index of meals for the day
 ** TODO seed up a single meal for today for dev user
 * Icebox
@@ -11,6 +10,8 @@
 ** TODO Change to Unicorn server
    Puma seems slow on dev
 * Done
+** DONE meal has fields for carbs fat and protein
+   CLOSED: [2017-08-04 Fri 18:52]
 ** DONE user has many meals
    CLOSED: [2017-08-04 Fri 18:47]
 ** DONE User redirected to their own dashboard
