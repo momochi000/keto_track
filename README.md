@@ -1,23 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby Version: 5.1.2
 
-Things you may want to cover:
+## Development setup
 
-* Ruby version
+### Requirements
 
-* System dependencies
+* docker
+* docker-compose
 
-* Configuration
+### Instructions
+Create a database.yml in config/
 
-* Database creation
+Then run:
+``` 
+docker-compose build && docker-compose up
+```
 
-* Database initialization
+Once the containers are running, run:
+```
+docker-compose run --rm web ./bin/rails db:create db:migrate dev:seed
+```
 
+That's it!
+
+## TODO:
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
