@@ -1,11 +1,8 @@
 * Purpose of this document
   To track tasks in development this app
 * Current
-** TODO Add initial user to seed
-* Backlog
-** TODO User can sign out
-** TODO User redirected to their own dashboard
 ** TODO user has many meals
+* Backlog
 ** TODO meal has fields for carbs fat and protein
 ** TODO dashboard shows index of meals for the day
 ** TODO seed up a single meal for today for dev user
@@ -15,6 +12,12 @@
 ** TODO Change to Unicorn server
    Puma seems slow on dev
 * Done
+** DONE User redirected to their own dashboard
+   CLOSED: [2017-08-04 Fri 18:39]
+** DONE User can sign out
+   CLOSED: [2017-08-04 Fri 18:33]
+** DONE Add initial user to seed
+   CLOSED: [2017-08-04 Fri 18:33]
 ** DONE User can log in
    CLOSED: [2017-08-04 Fri 16:36]
 *** DONE Install/setup devise
