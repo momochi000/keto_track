@@ -1,13 +1,12 @@
 * Purpose of this document
   To track tasks in development this app
 * Current
-** TODO User can input their macro goals on dashboard
-* Backlog
 ** TODO Dashboard dislays an indicator of their daily goal
    Shows how close they are to their goal, if the goal was reached, or if the 
    goal was exceeded.  
-* Icebox
+* Backlog
 ** TODO Add bootstrap and rework markup
+* Icebox
 ** TODO Change to Unicorn server
    Puma seems slow on dev
 ** TODO Track calories as well
@@ -18,6 +17,8 @@
    For example, they can just tap 'egg' to add an egg for the day
 ** TODO A user can have their own menu
 * Done
+** DONE User can input their macro goals on dashboard
+   CLOSED: [2017-08-08 Tue 16:11]
 ** DONE User can record a meal from dashboard
    CLOSED: [2017-08-08 Tue 15:18]
 ** DONE seed up a single meal for today for dev user
