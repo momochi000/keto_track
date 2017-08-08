@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170805014730) do
+ActiveRecord::Schema.define(version: 20170808223926) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "daily_goals", force: :cascade do |t|
+    t.bigint "user_id"
+    t.decimal "fat", precision: 5, scale: 2
+    t.decimal "carbs", precision: 5, scale: 2
+    t.decimal "protein", precision: 5, scale: 2
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_daily_goals_on_user_id"
+  end
 
   create_table "meals", force: :cascade do |t|
     t.integer "user_id"

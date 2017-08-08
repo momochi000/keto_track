@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   resource :dashboard, :only => :show
 
-  resource :meals, :only => [:new, :create]
+  resources :meals, :only => [:new, :create]
+  resource :daily_goal, :only => [:new, :create, :edit, :update]
 
   root :to => "welcome#index"
 end

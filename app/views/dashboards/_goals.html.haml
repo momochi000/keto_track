@@ -1,0 +1,14 @@
+-# Partial to show macro goals for a user
+-# Locals <User> user
+
+%h3 Your daily goals -->
+- if daily_goal.present?
+  .daily-goals.daily-goals-fats= daily_goal.fat
+  .daily-goals.daily-goals-carbs= daily_goal.carbs
+  .daily-goals.daily-goals-protein= daily_goal.protein
+  = link_to "Update your daily goals?", edit_daily_goal_path(daily_goal)
+-else
+  %h5 You have not yet set your daily goals
+  = link_to "Set daily goals now", new_daily_goal_path
+
+

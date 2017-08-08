@@ -1,0 +1,6 @@
+-# partial to render a form for creating a new daily goal
+-# locals <DailyGoal> daily_goal
+
+= form_for @daily_goal, :url => daily_goal_path do |f|
+  = render :partial => 'daily_goals/form', :locals => {:f => f}
+  = f.submit "Set your daily goals"

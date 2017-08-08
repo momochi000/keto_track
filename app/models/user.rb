@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :meals
+  has_one :daily_goal
 
   def todays_meals
     meals.where("created_at BETWEEN ? AND ?", Time.current.beginning_of_day, Time.current.end_of_day)
