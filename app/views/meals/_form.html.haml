@@ -1,0 +1,19 @@
+-# Form fields for a Meal
+-# Locals -> <FormBuilder> f
+= f.label :fat
+= f.number_field :fat, :step => 0.1
+
+%br
+= f.label :carbs
+= f.number_field :carbs, :step => 0.1
+%br
+
+= f.label :protein
+= f.number_field :protein, :step => 0.1
+
+%br
+
+= f.label :name
+= f.text_field :name
+
+%hr

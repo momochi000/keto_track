@@ -1,0 +1,5 @@
+-# Form to create a new meal
+-# Locals -> <Meal> meal
+= form_for meal do |f|
+  = render :partial => 'meals/form', :locals => {:f => f}
+  = f.submit "Create"

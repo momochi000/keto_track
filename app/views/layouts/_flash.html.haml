@@ -1,0 +1,4 @@
+- if flash.any?
+  - flash.keys.each do |flash_key|
+    %div{:class => "flash #{flash_key}"}
+      = flash[flash_key]
