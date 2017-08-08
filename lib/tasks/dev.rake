@@ -3,6 +3,7 @@ namespace :dev do
   task :seed => :environment do
 
     puts "LOG: Creating first dummy user foo@bar.com"
-    User.create(:email => 'foo@bar.com', :password => '123456', :password_confirmation => '123456')
+    u = FactoryGirl.create(:user, :email => 'foo@bar.com', :password => '123456', :password_confirmation => '123456')
+    FactoryGirl.create(:meal, :user => u)
   end
 end

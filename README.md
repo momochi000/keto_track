@@ -11,6 +11,10 @@ this would be a good way to brush up on my web stack by spinning up a
 top-of-the-line stack and writing this app within 1 day as a challenge to 
 myself.
 
+This app displays a dashboard for the user showing them their progress towards 
+their daily macro goal.  It allows them to add data from each meal consumed 
+and simply tallies up their day's carbs, fats, and protein.
+
 ## Ruby Version: 5.1.2
 
 ## Development setup
@@ -39,5 +43,3 @@ That's it!
 * How to run the test suite
 
 * Deployment instructions
-
-* ...
