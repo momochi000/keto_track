@@ -1,4 +1,5 @@
 - if flash.any?
   - flash.keys.each do |flash_key|
-    %div{:class => "flash #{flash_key}"}
+    %div{:class => "alert alert-#{flash_key_to_alert(flash_key)} alert-dismissable flash #{flash_key}"}
       = flash[flash_key]
+  %li.nav-item

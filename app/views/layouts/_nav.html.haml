@@ -1,2 +1,9 @@
-%nav.nav.navbar
-  = render :partial => "layouts/nav/user_auth"
+%nav.nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+  %button.navbar-toggler{:type=>"button", :data => {:toggle=>"collapse", :target=>"#keto-trac-navbar"}, :aria_controls=>"keto-trac-navbar", :aria_expanded=>"false", :aria_label=>"Toggle navigation"}
+    %span.navbar-toggler-icon
+
+  </button>
+  .collapse.navbar-collapse{:id => 'keto-trac-navbar'}
+    = link_to 'KetoTrac', root_url, :class => 'navbar-brand'
+    %ul.navbar-nav.ml-auto
+      = render :partial => "layouts/nav/user_auth"
