@@ -11,6 +11,9 @@
 *.swo
 .#dev.org
 
+#Stupid mac specific folder things
+.DS_Store
+
 # Ignore bundler config.
 /.bundle
 
