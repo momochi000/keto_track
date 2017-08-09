@@ -6,6 +6,10 @@
    So the user can easily mark down that they ate some item without having to
    input the number of fats, carbs, etc.
    For example, they can just tap 'egg' to add an egg for the day
+** TODO Deploy
+** TODO Style for mobile
+** TODO Test on mobile
+** TODO Build React components for a snappy web app
 * Icebox
 ** TODO Change to Unicorn server on dev only
    Puma seems slow on dev
