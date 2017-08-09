@@ -10,6 +10,8 @@
 require("expose-loader?$!expose-loader?jQuery!jquery"); // adds $ to window so we can jquery in global scope
 //require("rails-ujs"); // didn't seem to work
 require("jquery-ujs");
+require("bootstrap-loader");
+import "../styles/application"
 
 console.log('Hello World from Webpacker')
 
