@@ -1,19 +1,20 @@
 * Purpose of this document
   To track tasks in development this app
 * Current
-** TODO Add bootstrap and rework markup
 * Backlog
-* Icebox
-** TODO Change to Unicorn server
-   Puma seems slow on dev
-** TODO Track calories as well
-** TODO Include keto calculator to set the initial macros
 ** TODO Build a menu of premade food items
    So the user can easily mark down that they ate some item without having to
    input the number of fats, carbs, etc.
    For example, they can just tap 'egg' to add an egg for the day
+* Icebox
+** TODO Change to Unicorn server on dev only
+   Puma seems slow on dev
+** TODO Include keto calculator to set the initial macros
 ** TODO A user can have their own menu
+** TODO Track calories as well
 * Done
+** DONE Add bootstrap and rework markup
+   CLOSED: [2017-08-08 Tue 19:00]
 ** DONE Dashboard dislays an indicator of their daily goal
    CLOSED: [2017-08-08 Tue 16:25]
    Shows how close they are to their goal, if the goal was reached, or if the 
